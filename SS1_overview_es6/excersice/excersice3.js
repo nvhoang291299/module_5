@@ -16,5 +16,8 @@ let addedCourses = [
     } 
   ]; 
   
-let newCourses = [...courses, ...addedCourses];
-console.log(newCourses);
+  const mergeArray = (courses, addedCourses) => {
+    return [...courses, ...addedCourses];
+  }
+
+console.log(mergeArray(courses, addedCourses));

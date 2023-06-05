@@ -1,4 +1,4 @@
-let div1 = document.getElementById("list1");
+let div1 = document.querySelector("#list1");
 
 let courses = [ 
     { 
@@ -28,7 +28,7 @@ let courses = [
     }, 
   ];
 let html1 = "";
-let arr1 = courses.map((course) => {
+let arr1 = courses.filter((course) => {
     if(course.rating >= 4) {
         return html1 += `
             <div>
