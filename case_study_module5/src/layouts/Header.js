@@ -1,5 +1,9 @@
+import { Routes, Route, Link } from "react-router-dom";
+import TypeRoom from "../components/TypeRoom";
+
 function Header() {
   return (
+    <>
         <nav className="navbar navbar-expand-lg bg-furama color-white">
         <div className="container">
             <a className="navbar-brand" href="#">
@@ -27,9 +31,9 @@ function Header() {
                 </a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="#TypeRoom">
-                    Loại phòng
-                </a>
+                    <Link className="nav-link" href="/typeRoom">
+                        Loại phòng
+                    </Link>
                 </li>
                 <li className="nav-item">
                 <a className="nav-link" href="#">
@@ -65,6 +69,11 @@ function Header() {
             </div>
         </div>
         </nav>
+        <Routes>
+            <Route path="/typeRoom" element={<TypeRoom />} />
+        </Routes>
+    </>
+        
   );
 }
 export default Header;

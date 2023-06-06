@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tz-40{
+    font-size: 40px;
+}
+
+.w-1000{
+    width: 1000px;
+}
+
+.br-10px{
+    border-radius: 10px;
+}
+.img-fluid{
+    height: 100% !important;
+}
+
+.fix-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-form{
+    border-radius: 10px 0px 0 10px;
+}
+
+.bg-lightgray{
+    background-color: lightgray;
+}
