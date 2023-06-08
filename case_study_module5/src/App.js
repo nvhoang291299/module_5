@@ -8,11 +8,7 @@ function App() {
   return (
     <>
       <Header />
-      <Routes>
-        <Route exact path="/typeRoom">
-          <TypeRoom />
-        </Route>
-      </Routes>
+      <TypeRoom />
       <Footer />
     </>
   );

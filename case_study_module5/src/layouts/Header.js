@@ -69,9 +69,6 @@ function Header() {
             </div>
         </div>
         </nav>
-        <Routes>
-            <Route path="/typeRoom" element={<TypeRoom />} />
-        </Routes>
     </>
         
   );
