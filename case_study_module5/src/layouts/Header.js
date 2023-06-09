@@ -31,7 +31,7 @@ function Header() {
                 </a>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link" href="/typeRoom">
+                    <Link className="nav-link" to="/typeRoom">
                         Loại phòng
                     </Link>
                 </li>

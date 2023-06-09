@@ -4,7 +4,9 @@ function useIncrement(addAmount){
     const [count, setCount] = useState(0);
     
     function increase() {
-        setCount(count + addAmount);
+        setCount((prevCount) => (
+            prevCount + addAmount
+        ));
     }
 
     return [count, increase];

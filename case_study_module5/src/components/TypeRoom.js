@@ -4,15 +4,6 @@ import { Link } from "react-router-dom";
 function TypeRoom() {
   return (
     <>
-      {/* <div className='container'>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://furamavietnam.com/wp-content/uploads/2018/08/banner01.jpg?id=1433" class="d-block w-100" alt="..."/>
-                </div>
-            </div>
-        </div>
-      </div> */}
       <div className='container-fluid' style={{paddingLeft: 0, paddingRight: 0}}>
         <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
@@ -30,7 +21,7 @@ function TypeRoom() {
               <div class="card-body">
                 <h5 class="card-title">Phòng suite hướng biển</h5>
                 <p class="card-text">Diện tích phòng: 85.8m2</p>
-                <Link href="/editservices" className="btn btn-success mx-2">Sửa</Link>
+                <Link to="/editService" className="btn btn-success mx-2">Sửa</Link>
                 <Link href="#" className="btn btn-success">Xóa</Link>
               </div>
             </div>
