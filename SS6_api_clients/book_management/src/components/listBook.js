@@ -1,14 +1,30 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getList } from "../service/Service";
+import { deleteBook, getList } from "../service/Service";
+import { useNavigate } from "react-router-dom";
+import ModalConfirm from "./ModalConfirm";
+import { ToastContainer, toast } from "react-toastify";
+
 
 function ListBook() {
+  const navigate = useNavigate();
+  const [isShowModal, setShowModal] = useState(false); 
   const [list, setList] = useState([]);
+
+  const handleClose = () => {
+    setShowModal(false);
+  }
+
+  const handleDelete = async (book) => {
+      await deleteBook(book, book.id);
+      toast.success("xóa thành công")
+      navigate('/');
+  }
 
   useEffect(() => {
     const getListBook = async () => {
       const res = await getList();
-      setList((state) => (state = res));
+      setList(res);
     };
     getListBook();
   }, []);
@@ -31,20 +47,21 @@ function ListBook() {
         </thead>
         <tbody>
             {
-                list.map((book) => (
+               list && list.map((book) => (
                 <tr key={book.id}>
                     <th scope="row">{book.id}</th>
                     <td>{book.title}</td>
                     <td>{book.quantity}</td>
                     <td>
-                        <button className="btn btn-secondary">Edit</button>
-                        <button className="btn btn-danger">Delete</button>
+                        <Link to={"/updateBook/"+ book.id} className="btn btn-secondary mx-3">Update</Link>
+                        <button type="button" className="btn btn-danger" onClick={() => handleDelete(book)}>Delete</button>
                     </td>
                 </tr>
-                ))   
+              ))   
             }
         </tbody>
       </table>
+      <ToastContainer />
     </div>
   );
 }
