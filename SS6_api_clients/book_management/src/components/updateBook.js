@@ -10,14 +10,15 @@ function UpdateBook() {
 
     let param = useParams();
 
+    
     useEffect(() => {
-        const getBookById = async () =>{
-            const data = await Services.getBookById(param.id);
-            setTitle(data.title)
-            setQuantity(data.quantity)
-        }
-        getBookById()
-    }, [])
+      const getBookById = async () =>{
+        const data = await Services.getBookById(param.id);
+        setTitle(data.title)
+        setQuantity(data.quantity)
+      }
+      getBookById()
+    }, [param.id])
 
   return (
     <>
@@ -40,7 +41,7 @@ function UpdateBook() {
           <Form>
             <div className="mb-3">
               <label>Title</label>
-              <Field type="text" className="form-control" name="title"/>
+              <Field type="text" className="form-control" name="title" id="title"/>
             </div>
             <div className="mb-3">
               <label>Quantity</label>

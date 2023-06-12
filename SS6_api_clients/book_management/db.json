@@ -4,16 +4,6 @@
       "id": 1,
       "title": "book 1",
       "quantity": 10
-    },
-    {
-      "title": "book 44",
-      "quantity": 5,
-      "id": 2
-    },
-    {
-      "id": 3,
-      "title": "book 3",
-      "quantity": 10
     }
   ]
 }

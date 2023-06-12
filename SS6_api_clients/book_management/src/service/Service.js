@@ -20,6 +20,7 @@ import axios from "axios";
  const getBookById = async (idBook) => {
     try {
         const res = await axios.get(`http://localhost:8080/books/${idBook}`)
+        console.log(res.data);
         return res.data;
     } catch(error) {
         console.error("Loi he thong");
@@ -33,6 +34,7 @@ import axios from "axios";
         console.error("loi hien thi");
     }
 }
+
 
  const deleteBook = async (book, idBook) => {
     try {
