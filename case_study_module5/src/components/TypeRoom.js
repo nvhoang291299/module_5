@@ -9,12 +9,15 @@ function TypeRoom() {
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img src="https://furamavietnam.com/wp-content/uploads/2018/08/banner01.jpg?id=1433" class="d-block w-100" alt="..."/>
+                    <div className="carousel-caption d-none d-md-block">
+                    <h1 className="tz-40">Danh sách dịch vụ</h1>
+                </div>
                 </div>
             </div>
         </div>
       </div>
       <div className='container'>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
           <div class="col">
             <div class="card h-100">
               <img src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg" class="card-img-top" alt="..."/>

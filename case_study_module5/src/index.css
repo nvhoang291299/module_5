@@ -25,3 +25,7 @@ code {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.carousel-caption{
+  bottom: 7.25rem !important;
+}

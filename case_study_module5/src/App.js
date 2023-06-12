@@ -5,6 +5,8 @@ import { Route, Routes } from "react-router-dom";
 import TypeRoom from "./components/TypeRoom";
 import EditServices from "./components/EditServices";
 import CreateServices from "./components/CreateService";
+import ListCustomer from "./components/ListCustomer";
+import EditCustomer from "./components/EditCustomer";
 
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <Route path="/typeRoom" element={<TypeRoom />}/>
         <Route path="/editService" element={<EditServices />}/>
         <Route path="/createService" element={<CreateServices />}/>
+        <Route path="/listCustomer" element={<ListCustomer />}/>
+        <Route path="/editCustomer" element={<EditCustomer />}/>
       </Routes>
       <Footer />
       
