@@ -1,0 +1,44 @@
+{
+   "location": [
+         {
+           "name": "Hà Nội",
+           "death": 1232,
+           "treating": 0,
+           "cases": 1643184,
+           "recovered": 0,
+           "casesToday": 244
+         },
+         {
+           "name": "TP. Hồ Chí Minh",
+           "death": 19985,
+           "treating": 0,
+           "cases": 628551,
+           "recovered": 0,
+           "casesToday": 32
+         },
+         {
+           "name": "Hải Phòng",
+           "death": 138,
+           "treating": 0,
+           "cases": 537125,
+           "recovered": 0,
+           "casesToday": 6
+         },
+         {
+           "name": "Nghệ An",
+           "death": 145,
+           "treating": 0,
+           "cases": 501599,
+           "recovered": 0,
+           "casesToday": 30
+         },
+         {
+           "name": "Bắc Giang",
+           "death": 92,
+           "treating": 0,
+           "cases": 391402,
+           "recovered": 0,
+           "casesToday": 0
+         }
+    ]
+}
