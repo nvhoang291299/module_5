@@ -13,6 +13,7 @@ export default function Home({dataCovid}){
                 <th>Cases</th>
                 <th>Recovered</th>
                 <th>Cases today</th>
+
             </tr>
            </thead>
            <tbody>
