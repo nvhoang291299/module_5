@@ -2,83 +2,83 @@
     "facility": [
         {
             "id": 1,
-            "name_service": "phòng suite hướng biển",
+            "nameService": "phòng suite hướng biển",
             "area": 85.8,
-            "rental_cost": 7000000,
-            "quantity_per": 4,
-            "rental_type": "Theo ngày",
+            "rentalCost": 7000000,
+            "quantityPer": 4,
+            "rentalType": "Theo ngày",
             "description": "internet free"
         },
         {
             "id": 2,
-            "name_service": "phòng studio suite hướng biển",
+            "nameService": "phòng studio suite hướng biển",
             "area": 40.1,
-            "rental_cost": 4000000,
-            "quantity_per": 1,
-            "rental_type": "Theo giờ",
+            "rentalCost": 4000000,
+            "quantityPer": 1,
+            "rentalType": "Theo giờ",
             "description": "internet free"
         },
         {
             "id": 3,
-            "name_service": "phòng deluxe hướng biển",
+            "nameService": "phòng deluxe hướng biển",
             "area": 43.8,
-            "rental_cost": 5000000,
-            "quantity_per": 2,
-            "rental_type": "Theo ngày",
+            "rentalCost": 5000000,
+            "quantityPer": 2,
+            "rentalType": "Theo ngày",
             "description": "internet free"
         },
         {
             "id": 4,
-            "name_service": "phòng superior hướng hồ",
+            "nameService": "phòng superior hướng hồ",
             "area": 40.1,
-            "rental_cost": 4000000,
-            "quantity_per": 2,
-            "rental_type": "Theo ngày",
+            "rentalCost": 4000000,
+            "quantityPer": 2,
+            "rentalType": "Theo ngày",
             "description": "internet free"
         },
         {
             "id": 5,
-            "name_service": "phòng superior hướng vườn",
+            "nameService": "phòng superior hướng vườn",
             "area": 40.1,
-            "rental_cost": 4000000,
-            "quantity_per": 2,
-            "rental_type": "Theo ngày",
+            "rentalCost": 4000000,
+            "quantityPer": 2,
+            "rentalType": "Theo ngày",
             "description": "internet free"
         },
         {
             "id": 6,
-            "name_service": "phòng deluxe hướng vườn",
+            "nameService": "phòng deluxe hướng vườn",
             "area": 43.7,
-            "rental_cost": 4500000,
-            "quantity_per": 2,
-            "rental_type": "Theo ngày",
+            "rentalCost": 4500000,
+            "quantityPer": 2,
+            "rentalType": "Theo ngày",
             "description": "internet free"
         },
         {
             "id": 7,
-            "name_service": "phòng presidential suite",
+            "nameService": "phòng presidential suite",
             "area": 130,
-            "rental_cost": 25000000,
-            "quantity_per": 5,
-            "rental_type": "Theo tháng",
+            "rentalCost": 25000000,
+            "quantityPer": 5,
+            "rentalType": "Theo tháng",
             "description": "internet free"
         },
         {
             "id": 8,
-            "name_service": "biệt thự hướng biển có hồ bơi riêng",
+            "nameService": "biệt thự hướng biển có hồ bơi riêng",
             "area": 900,
-            "rental_cost": 50000000,
-            "quantity_per": 5,
-            "rental_type": "Theo năm",
+            "rentalCost": 50000000,
+            "quantityPer": 5,
+            "rentalType": "Theo năm",
             "description": "internet free"
         },
         {
             "id": 9,
-            "name_service": "biệt thự hướng vườn có hồ bơi riêng",
+            "nameService": "biệt thự hướng vườn có hồ bơi riêng",
             "area": 320,
-            "rental_cost": 27000000,
-            "quantity_per": 5,
-            "rental_type": "Theo năm",
+            "rentalCost": 27000000,
+            "quantityPer": 5,
+            "rentalType": "Theo năm",
             "description": "internet free"
         }
     ],
@@ -142,43 +142,43 @@
     "contact": [
         {
             "id": 1,
-            "idCustomer": 1,
-            "idFacility": 8,
             "dateContact": "13/06/2023",
             "dateEnd": "13/06/2024",
-            "deposit": 25000000 
+            "deposit": 25000000,
+            "customerId": 1,
+            "facilityId": 8
         },
         {
             "id": 2,
-            "idCustomer": 2,
-            "idFacility": 2,
             "dateContact": "13/06/2023",
             "dateEnd": "14/06/2023",
-            "deposit": 500000 
+            "deposit": 500000,
+            "customerId": 2,
+            "facilityId": 2 
         },
         {
             "id": 3,
-            "idCustomer": 3,
-            "idFacility": 3,
             "dateContact": "13/06/2023",
             "dateEnd": "15/06/2023",
-            "deposit": 550000 
+            "deposit": 550000,
+            "customerId": 3,
+            "facilityId": 3
         },
         {
             "id": 4,
-            "idCustomer": 4,
-            "idFacility": 2,
             "dateContact": "13/06/2023",
             "dateEnd": "15/06/2023",
-            "deposit": 550000 
+            "deposit": 550000,
+            "customerId": 4,
+            "facilityId": 2
         },
         {
             "id": 5,
-            "idCustomer": 5,
-            "idFacility": 2,
             "dateContact": "13/06/2023",
             "dateEnd": "15/06/2023",
-            "deposit": 550000 
+            "deposit": 550000,
+            "customerId": 5,
+            "facilityId": 2
         }
     ]
 }

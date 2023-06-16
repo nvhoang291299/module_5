@@ -1,6 +1,22 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useState } from "react";
+import {getCustomers} from "../service/UseServices";
+
 
 function ListCustomer() {
+  const [customers, setCustomers] = useState([]);
+
+  const getList  = async () => {
+    const response = await getCustomers();
+    console.log(response);
+    setCustomers(response.data)
+  }
+
+  useEffect(() => {
+    getList()
+  }, [])
+
     return (
         <>
              <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
@@ -32,20 +48,24 @@ function ListCustomer() {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Nguyễn Viết Hoàng</td>
-                <td>02/01/2000</td>
-                <td>nam</td>
-                <td>18777444</td>
-                <td>0987654321</td>
-                <td>hoang@gmail.com</td>
-                <td>Nghệ An</td>
-                <td><p className="badge rounded-pill bg-success text-white">Diamond</p></td>
-                <td>
-                    <Link to="/editCustomer" className="btn btn-success mx-2">Sửa</Link>
-                </td>
-              </tr>
+              {
+                customers.map((customer) => (
+                  <tr>
+                    <th scope="row">{customer.id}</th>
+                    <td>{customer.fullname}</td>
+                    <td>{customer.dateOfBirth}</td>
+                    <td>{customer.gender}</td>
+                    <td>{customer.idCard}</td>
+                    <td>{customer.phoneNumber}</td>
+                    <td>{customer.email}</td>
+                    <td>{customer.address}</td>
+                    <td><p className="badge rounded-pill bg-success text-white">{customer.typeCustomer}</p></td>
+                    <td>
+                        <Link to="/editCustomer" className="btn btn-success mx-2">Sửa</Link>
+                    </td>
+                  </tr>
+                ))
+              }
             </tbody>
           </table>
     </div>

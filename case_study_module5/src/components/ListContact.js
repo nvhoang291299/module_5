@@ -1,4 +1,7 @@
+
+
 function ListContact() {
+  
     return (
         <>
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -29,8 +32,7 @@ function ListContact() {
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
-                <td>1</td>
+                <td scope="row">1</td>
                 <td>Nguyễn Viết Hoàng</td>
                 <td>07/06/2023</td>
                 <td>10/06/2023</td>

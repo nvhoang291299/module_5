@@ -1,0 +1,71 @@
+{
+  "product": [
+    {
+      "code": "PROD-0003",
+      "nameProduct": "thuốc an thần",
+      "descriptionProduct": "thuốc",
+      "typeId": "1",
+      "price": 50000,
+      "quantity": 50,
+      "date": "16/06/2023",
+      "id": 3
+    },
+    {
+      "code": "PROD-0004",
+      "nameProduct": "cồn vệ sinh",
+      "descriptionProduct": "thiết bị y tế",
+      "typeId": "3",
+      "price": 10000,
+      "quantity": 1,
+      "date": "16/06/2023",
+      "id": 4
+    },
+    {
+      "code": "PROD-0005",
+      "nameProduct": "chỉ nha khoa",
+      "descriptionProduct": "thiết bị y tế",
+      "typeId": "3",
+      "price": 20000,
+      "quantity": 1,
+      "date": "16/06/2023",
+      "id": 5
+    },
+    {
+      "code": "PROD-0007",
+      "nameProduct": "thuốc mọc tóc",
+      "descriptionProduct": "không phải thuốc",
+      "typeId": "2",
+      "price": 50000,
+      "quantity": 1,
+      "date": "16/06/2023",
+      "id": 7
+    },
+    {
+      "code": "PROD-0010",
+      "nameProduct": "thuốc trị bênh trĩ",
+      "descriptionProduct": "thuốc kê theo đơn",
+      "typeId": "1",
+      "price": 49999,
+      "quantity": 30,
+      "date": "16/06/2023",
+      "id": 9
+    }
+  ],
+  "typeProduct": [
+    {
+      "id": 1,
+      "nameType": "Dược phẩm",
+      "descType": "abc"
+    },
+    {
+      "id": 2,
+      "nameType": "Thực phẩm chức năng",
+      "descType": "abc"
+    },
+    {
+      "id": 3,
+      "nameType": "Thiết bị y tế",
+      "descType": "abc"
+    }
+  ]
+}

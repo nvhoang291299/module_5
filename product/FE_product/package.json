@@ -1,5 +1,5 @@
 {
-  "name": "case_study_module5",
+  "name": "test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,6 @@
     "formik": "^2.4.2",
     "json-server": "^0.17.3",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-paginate": "^8.2.0",
     "react-router-dom": "^6.13.0",

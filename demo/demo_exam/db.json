@@ -1,0 +1,58 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "codeProduct": "SP-0001",
+      "nameProduct": "iphone 14",
+      "price": 5000,
+      "typeId": 1,
+      "date": "14-06-2023"
+    },
+    {
+      "id": 2,
+      "codeProduct": "SP-0002",
+      "nameProduct": "iphone 13",
+      "price": 9000,
+      "typeId": 1,
+      "date": "14-06-2023"
+    },
+    {
+      "codeProduct": "SP-0333",
+      "nameProduct": "msi modern 14",
+      "price": 10000000,
+      "typeId": "3",
+      "date": "2023-06-15",
+      "id": 3
+    },
+    {
+      "codeProduct": "SP-0333",
+      "nameProduct": "msi modern 14",
+      "price": 10000000,
+      "typeId": "3",
+      "date": "2023-06-15",
+      "id": 4
+    },
+    {
+      "codeProduct": "SP-0222",
+      "nameProduct": "book",
+      "price": 10000,
+      "typeId": "1",
+      "date": "2023-06-23",
+      "id": 6
+    }
+  ],
+  "typeProduct": [
+    {
+      "typeId": 1,
+      "name": "Điện thoại"
+    },
+    {
+      "typeId": 2,
+      "name": "Máy tính bảng"
+    },
+    {
+      "typeId": 3,
+      "name": "Laptop"
+    }
+  ]
+}
